@@ -25,6 +25,7 @@
     {"name":"obj_enemyDeath","order":4,"path":"objects/obj_enemyDeath/obj_enemyDeath.yy",},
     {"name":"obj_floor","order":3,"path":"objects/obj_floor/obj_floor.yy",},
     {"name":"obj_scoreboard","order":1,"path":"objects/obj_scoreboard/obj_scoreboard.yy",},
+    {"name":"spr_player_running","order":6,"path":"sprites/spr_player_running/spr_player_running.yy",},
     {"name":"spr_enemy1","order":3,"path":"sprites/spr_enemy1/spr_enemy1.yy",},
     {"name":"obj_pickup","order":6,"path":"objects/obj_pickup/obj_pickup.yy",},
     {"name":"obj_enemy1","order":2,"path":"objects/obj_enemy1/obj_enemy1.yy",},

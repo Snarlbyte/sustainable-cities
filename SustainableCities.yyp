@@ -43,6 +43,7 @@
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"order":0,},
     {"id":{"name":"obj_scoreboard","path":"objects/obj_scoreboard/obj_scoreboard.yy",},"order":0,},
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},"order":0,},
+    {"id":{"name":"spr_player_running","path":"sprites/spr_player_running/spr_player_running.yy",},"order":0,},
     {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},"order":0,},
     {"id":{"name":"scr_damage","path":"scripts/scr_damage/scr_damage.yy",},"order":0,},
     {"id":{"name":"obj_pickup","path":"objects/obj_pickup/obj_pickup.yy",},"order":0,},

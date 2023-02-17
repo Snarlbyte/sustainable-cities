@@ -1,12 +1,18 @@
 
 if (keyboard_check(vk_left) and !instance_place(x-move_speed,y,obj_floor)) {
 	x += -move_speed
+	sprite_index = spr_player_running
 	image_xscale = 1
+} if (keyboard_check_released(vk_left)) {
+	sprite_index = spr_player
 }
 
 if (keyboard_check(vk_right) and !instance_place(x+move_speed,y,obj_floor)) {
 	x += move_speed
+	sprite_index = spr_player_running
 	image_xscale = -1
+} if (keyboard_check_released(vk_right)) {
+	sprite_index = spr_player
 }
 
 if (keyboard_check(vk_up)) {
