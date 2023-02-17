@@ -1,9 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
-if object_exists(obj_player) {
-	if(collision_line(x,y,obj_player.x,obj_player.y,obj_floor,true,true) = noone) {
-		direction = point_direction(x,y,obj_player.x,obj_player.y);
-		speed = extraSpeed;
+if instance_exists(obj_player) {
+	speed = extraSpeed;
+	if (knockback){
+		direction = point_direction(obj_player.x,obj_player.y,x,y)
+		speed = speed + 1
+	} else if (!(knockback) and canAttack) {
+		direction = point_direction(x,y,obj_player.x,obj_player.y)
+		speed = extraSpeed
+	} else {
+		direction = point_direction(x,y,obj_player.x,obj_player.y)
+		speed = 0
 	}
 }
 
