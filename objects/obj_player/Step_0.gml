@@ -1,22 +1,27 @@
-/// @description Move
-// You can write your code in this editor
-jump_force = ((2*jump_height)/jump_time_to_peak) * -1.0;
-jump_gravity = ((-2*jump_height)/(jump_time_to_peak*jump_time_to_peak)) * -1;
-fall_gravity = ((-2 * jump_height) / (jump_time_to_descent * jump_time_to_descent)) * -1;
-if keyboard_check(vk_left) && place_free(x-space_ahead,y){
-	x -= spd
+
+if (keyboard_check(vk_left) and !instance_place(x-move_speed,y,obj_floor)) {
+	x += -move_speed
+	image_xscale = 1
 }
 
-if keyboard_check(vk_right) && place_free(x+space_ahead,y){
-	x += spd
+if (keyboard_check(vk_right) and !instance_place(x+move_speed,y,obj_floor)) {
+	x += move_speed
+	image_xscale = -1
 }
 
-if keyboard_check_pressed(vk_up) && !place_free(x,y+space_ahead){
-	vspeed = jump_force;
+if (keyboard_check(vk_up)) {
+	show_debug_message("jumping...")
+	if (instance_place(x, y+1, obj_floor)) {
+		vspeed = jump_height
+	}
 }
 
-if place_free(x,y+space_ahead){
-	gravity = 1;
+if (instance_place(x, y+1, obj_floor)){
+	gravity = 0
 } else {
-	gravity = 0;
+	gravity = 0.25;
+}
+vspeed = min(vspeed,12)
+if (keyboard_check_pressed(ord("Z"))) {
+	instance_create_layer(x, y, "Instances", obj_staff);
 }

@@ -16,13 +16,17 @@
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_staff","order":5,"path":"objects/obj_staff/obj_staff.yy",},
+    {"name":"spr_pickup","order":5,"path":"sprites/spr_pickup/spr_pickup.yy",},
     {"name":"spr_background","order":1,"path":"sprites/spr_background/spr_background.yy",},
+    {"name":"spr_staff","order":4,"path":"sprites/spr_staff/spr_staff.yy",},
     {"name":"scr_jump","order":1,"path":"scripts/scr_jump/scr_jump.yy",},
     {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"obj_enemyDeath","order":4,"path":"objects/obj_enemyDeath/obj_enemyDeath.yy",},
     {"name":"obj_floor","order":3,"path":"objects/obj_floor/obj_floor.yy",},
     {"name":"obj_scoreboard","order":1,"path":"objects/obj_scoreboard/obj_scoreboard.yy",},
     {"name":"spr_enemy1","order":3,"path":"sprites/spr_enemy1/spr_enemy1.yy",},
+    {"name":"obj_pickup","order":6,"path":"objects/obj_pickup/obj_pickup.yy",},
     {"name":"obj_enemy1","order":2,"path":"objects/obj_enemy1/obj_enemy1.yy",},
   ],
 }
