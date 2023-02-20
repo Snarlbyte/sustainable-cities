@@ -1,31 +1,40 @@
+key_left = keyboard_check(vk_left);
+key_right = keyboard_check(vk_right);
+key_jump = keyboard_check_pressed(vk_space);
 
-if (keyboard_check(vk_left) and !instance_place(x-move_speed,y,obj_floor)) {
-	x += -move_speed
-	image_xscale = 1
-} if (keyboard_check_released(vk_left)) {
-	sprite_index = spr_player
+var _move = key_right - key_left;
+hsp = _move * move_speed;
+vsp = vsp + grv;
+
+
+if(place_meeting(x,y+1,obj_floor)) && (key_jump){
+	vsp = -jump_height;
 }
 
-if (keyboard_check(vk_right) and !instance_place(x+move_speed,y,obj_floor)) {
-	x += move_speed
-	image_xscale = -1
-} if (keyboard_check_released(vk_right)) {
-	sprite_index = spr_player
-}
-
-if (keyboard_check(vk_up)) {
-	show_debug_message("jumping...")
-	if (instance_place(x, y+1, obj_floor)) {
-		vspeed = jump_height
+// Horizontal Collision
+if (place_meeting(x+hsp, y, obj_floor)){
+	while (!place_meeting(x+sign(hsp),y,obj_floor)){
+		x = x + sign(hsp);
 	}
+	hsp = 0;
 }
+x = x + hsp;
 
-if (instance_place(x, y+1, obj_floor)){
-	gravity = 0
-} else {
-	gravity = 0.5
+//Vertical Collision
+if (place_meeting(x,y+vsp,obj_floor)){
+	while (!place_meeting(x,y+sign(vsp),obj_floor)){
+		y = y + sign(vsp);
+	}
+	vsp = 0;
 }
-vspeed = min(vspeed,16)
-if (keyboard_check_pressed(ord("Z"))) {
-	instance_create_layer(x, y, "Instances", obj_staff);
+y = y + vsp;
+
+// Animations
+if (hsp != 0) image_xscale = (-sign(hsp));
+if (sprite_index != spr_player_attack_up){
+	sprite_index = (hsp != 0) ? spr_player_running : spr_player;
+}
+if (keyboard_check_pressed(ord("Z")) and canAttack) {
+	sprite_index = spr_player_attack_up;
+	immune = true;
 }

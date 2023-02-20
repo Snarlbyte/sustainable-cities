@@ -17,6 +17,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"obj_staff","order":5,"path":"objects/obj_staff/obj_staff.yy",},
+    {"name":"spr_player_attack_up","order":7,"path":"sprites/spr_player_attack_up/spr_player_attack_up.yy",},
     {"name":"spr_pickup","order":5,"path":"sprites/spr_pickup/spr_pickup.yy",},
     {"name":"obj_playerDeath","order":7,"path":"objects/obj_playerDeath/obj_playerDeath.yy",},
     {"name":"spr_background","order":1,"path":"sprites/spr_background/spr_background.yy",},
@@ -25,6 +26,7 @@
     {"name":"obj_enemyDeath","order":4,"path":"objects/obj_enemyDeath/obj_enemyDeath.yy",},
     {"name":"obj_floor","order":3,"path":"objects/obj_floor/obj_floor.yy",},
     {"name":"obj_scoreboard","order":1,"path":"objects/obj_scoreboard/obj_scoreboard.yy",},
+    {"name":"shdr_immune","order":1,"path":"shaders/shdr_immune/shdr_immune.yy",},
     {"name":"spr_player_running","order":6,"path":"sprites/spr_player_running/spr_player_running.yy",},
     {"name":"spr_enemy1","order":3,"path":"sprites/spr_enemy1/spr_enemy1.yy",},
     {"name":"obj_pickup","order":6,"path":"objects/obj_pickup/obj_pickup.yy",},

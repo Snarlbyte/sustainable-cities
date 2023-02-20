@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Move and knockback
 // You can write your code in this editor
 if instance_exists(obj_player) {
 	speed = extraSpeed;
