@@ -1,17 +1,16 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_damage(target){
-	self.canAttack = false
 	if !(target.immune){
 		if target.object_index = obj_player {
 			health -= self.damage
 			self.alarm[1] = self.knockbackTime
 			self.knockback = true;
+			self.alarm[0] = self.attackSpeed;
 		} else { 
-			target.hp -= self.damage
+			target.hp -= obj_player.damage
 		}
-		self.alarm[0] = self.attackSpeed
-		target.alarm[2] = target.immuneTime
+		target.alarm[2] = target.immuneTime;
 		target.immune = true;
 	}
 	if target.object_index = obj_player{

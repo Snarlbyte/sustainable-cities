@@ -31,10 +31,15 @@ y = y + vsp;
 
 // Animations
 if (hsp != 0) image_xscale = (-sign(hsp));
-if (sprite_index != spr_player_attack_up){
+if(attackDone)
 	sprite_index = (hsp != 0) ? spr_player_running : spr_player;
-}
+
 if (keyboard_check_pressed(ord("Z")) and canAttack) {
 	sprite_index = spr_player_attack_up;
-	immune = true;
+	event_user(0);
+	event_user(1);
+} else if (keyboard_check_pressed(ord("X")) and canAttack) {
+	sprite_index = spr_player_attack_fwd;
+	event_user(0);
+	event_user(1);
 }
