@@ -1,8 +1,8 @@
-/// @description Hitbox Up
+/// @description Hitbox
 // You can write your code in this editor
 if(sprite_index = spr_player_attack_fwd){
-	if(image_xscale == -1){ hitBox_X = 0; hitBox_Y = 0; set_X1 = 0; set_X2 = 320; set_Y1 = -80; set_Y2 = 80}
-	if(image_xscale == 1){ hitBox_X = 0; hitBox_Y = 0; set_X1 = 0; set_X2 = -320; set_Y1 = -80; set_Y2 = 80}
+	if(image_xscale == -1){ hitBox_X = 0; hitBox_Y = 0; set_X1 = 0; set_X2 = 320; set_Y1 = -160; set_Y2 = 160}
+	if(image_xscale == 1){ hitBox_X = 0; hitBox_Y = 0; set_X1 = 0; set_X2 = -320; set_Y1 = -160; set_Y2 = 160}
 }
 else if(sprite_index = spr_player_attack_up){
 	hitBox_X = 0; hitBox_Y = 0; set_X1 = -180; set_X2 = 220; set_Y1 = 0; set_Y2 = -240}

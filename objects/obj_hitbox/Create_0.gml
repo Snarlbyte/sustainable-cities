@@ -1,4 +1,4 @@
-/// @description Variables
+/// @description Creation variables
 // You can write your code in this editor
 x1 = 0;
 x2 = 0;

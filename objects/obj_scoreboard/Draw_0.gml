@@ -1,4 +1,5 @@
 /// @description Health
 // You can write your code in this editor
-draw_text(55, 55, "Score: " + string(score))
-draw_text(55, 70, "Health: " + string(health))
+draw_set_font(Menu);
+draw_healthbar(50, 50, 600, 125, health, c_grey, c_red, c_lime, 0, true, false);
+draw_text(50, 130, "Score: " + string(score))
