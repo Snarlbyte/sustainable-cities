@@ -1,7 +1,7 @@
 /// @description Move and knockback
 // You can write your code in this editor
 if(!tempknock){
-	if instance_exists(obj_player) {
+	if (instance_exists(obj_player) and distance_to_object(obj_player) < attack_range) {
 		speed = extraSpeed;
 		if (knockback){
 			direction = point_direction(obj_player.x,obj_player.y,x,y)
