@@ -2,11 +2,11 @@
 // You can write your code in this editor
 draw_self();
 if (knockback){
-	shader_set(shdr_hit);
+	shader_set(shdr_immune);
 	draw_self();
 	shader_reset();
 } else if(immune) {
-	shader_set(shdr_immune);
+	shader_set(shdr_hit);
 	draw_self();
 	shader_reset();
 } else {

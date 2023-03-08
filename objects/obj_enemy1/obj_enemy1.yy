@@ -41,6 +41,13 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"immuneTime","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"30","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"knockbackTime","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"30","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"attack_range","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1200","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"score_amount","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"2","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"score_direction","filters":[],"listItems":[
+        "225",
+        "315",
+        "45",
+        "135",
+      ],"multiselect":true,"rangeEnabled":true,"rangeMax":315.0,"rangeMin":255.0,"value":"225, 315","varType":6,},
   ],
   "solid": false,
   "spriteId": {

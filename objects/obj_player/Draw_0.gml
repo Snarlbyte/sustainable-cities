@@ -2,7 +2,7 @@
 // You can write your code in this editor
 draw_self();
 if(immune) {
-	shader_set(shdr_immune);
+	shader_set(shdr_hit);
 	draw_self();
 	shader_reset();
 } else {

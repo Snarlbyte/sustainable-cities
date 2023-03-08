@@ -16,8 +16,5 @@ if(!tempknock){
 	}
 }
 
-if direction > 180 {
-	image_xscale = -1
-} else {
-	image_xscale = 1
-}
+if instance_exists(obj_player)
+	image_xscale = (obj_player.x > x) ? -1 : 1;
