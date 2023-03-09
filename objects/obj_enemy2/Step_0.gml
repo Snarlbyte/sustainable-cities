@@ -17,7 +17,14 @@ if(place_meeting(x, y+sign(vsp), obj_floor_full) and jump){
 	jumping = true;
 	vsp = -jump_height;
 } else if(jumping){
-	image_index = (vsp > 0) ? 3 : 2;
+	if(vsp < 0){
+		image_index = 2	
+	}
+	else if(1 > vsp >= -1.5){
+		image_index = 3
+		image_index = (vsp > 6) ? 2 : 3;
+	}
+	
 	grv = 0.3;
 	if(instance_exists(obj_player))
 		hsp = (obj_player.x > x) ? extraSpeed : -extraSpeed;
