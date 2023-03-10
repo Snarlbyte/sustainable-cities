@@ -32,7 +32,7 @@ if credit
 	width = new_w + margin*2
 	height = margin*2 + string_height(options[0]) + (cr_length+1)*space;
 	x = 0 + sprite_xoffset+ margin;
-	y = 0 + sprite_yoffset + margin;
+	y = 0 + sprite_yoffset + 10;
 }
 
 //draw menu background

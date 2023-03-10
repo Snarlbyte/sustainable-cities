@@ -22,5 +22,8 @@ drawtime = true;
 credits[0] = "Story: Denzel Fowler, Makani Womack, Fred Fields, Matthew de Ridder";
 credits[1] = "Art: Denzel Fowler";
 credits[2] = "Sound: ";
+credits[3] = "Design: Denzel Fowler, Makani Womack";
+credits[4] = "Forest tileset by sanctumpixel: ";
+credits[5] = "https://sanctumpixel.itch.io/forest-lite-pixel-art-tileset";
 
 cr_length = array_length(credits);

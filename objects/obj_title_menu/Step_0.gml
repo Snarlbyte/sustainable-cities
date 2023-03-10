@@ -24,7 +24,7 @@ if(!credit)
 		{
 			//start game
 			case 0:
-				room_goto(Room1);
+				room_goto_next();
 				break;
 			//credits
 			 case 1:
