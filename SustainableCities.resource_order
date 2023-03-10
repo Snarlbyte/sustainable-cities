@@ -40,7 +40,7 @@
     {"name":"obj_pickup2","order":10,"path":"objects/obj_pickup2/obj_pickup2.yy",},
     {"name":"spr_cloudy_sky","order":23,"path":"sprites/spr_cloudy_sky/spr_cloudy_sky.yy",},
     {"name":"spr_clouds","order":18,"path":"sprites/spr_clouds/spr_clouds.yy",},
-    {"name":"ForestRoom1","order":1,"path":"rooms/ForestRoom1/ForestRoom1.yy",},
+    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"spr_sky","order":22,"path":"sprites/spr_sky/spr_sky.yy",},
     {"name":"shdr_immune","order":1,"path":"shaders/shdr_immune/shdr_immune.yy",},
     {"name":"spr_mountains","order":19,"path":"sprites/spr_mountains/spr_mountains.yy",},

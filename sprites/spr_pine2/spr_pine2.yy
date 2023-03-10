@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_pine2",
-  "bbox_bottom": 198,
+  "bbox_bottom": 1193,
   "bbox_left": 0,
-  "bbox_right": 687,
+  "bbox_right": 4127,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 199,
+  "height": 1194,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c7698d54-eb29-4ee0-8b58-260c0dd98980","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 688,
+  "width": 4128,
 }

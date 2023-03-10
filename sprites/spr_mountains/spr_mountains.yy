@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_mountains",
-  "bbox_bottom": 126,
+  "bbox_bottom": 825,
   "bbox_left": 0,
-  "bbox_right": 687,
+  "bbox_right": 4471,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 127,
+  "height": 826,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0a25f88e-17b9-449f-a5b7-ebb9baece62a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 688,
+  "width": 4472,
 }
