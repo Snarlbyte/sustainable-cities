@@ -1,0 +1,2 @@
+/// @description Immune
+immune = true;

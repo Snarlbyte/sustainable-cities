@@ -8,6 +8,7 @@ function scr_damage(target){
 			self.knockback = true;
 			self.alarm[0] = self.attackSpeed;
 		} else { 
+			audio_play_sound(snd_hit,1,false);
 			target.hp -= obj_player.damage
 		}
 		target.alarm[2] = target.immuneTime;

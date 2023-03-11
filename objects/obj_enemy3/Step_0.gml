@@ -8,6 +8,7 @@ if (instance_exists(obj_player) and distance_to_object(obj_player) < attack_rang
 		// Ready and fire
 		image_index = 2;
 			if(canAttack){
+				audio_play_sound(snd_shoot,1,false);
 				instance_create_layer(x,y,"Instances", obj_enemybullet);
 				canAttack = false;
 				// Fire Rate

@@ -15,6 +15,7 @@ if (instance_exists(obj_player) and distance_to_object(obj_player) < attack_rang
 if(place_meeting(x, y+sign(vsp), obj_floor_full) and jump){
 	jump = false;
 	jumping = true;
+	audio_play_sound(snd_spring,2,false);
 	vsp = -jump_height;
 } else if(jumping){
 	if(vsp < 0){
